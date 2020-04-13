@@ -2,26 +2,40 @@
   padding: 0;
   margin: 0 auto;
   box-sizing: border-box;
-  position: relative;
+  /* position: relative; */
 }
 body {
   background: #f5f7fa;
   font-family: "Montserrat", sans-serif;
-  padding: 40px;
+  padding: 5%;
 }
+@media (max-width: 768px) 
+{
+  .wrapper {
+    flex-direction: column;
+    margin: 20px;
+  }
+  .sidebar {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .my-photo {
+    width: 100%;
+  }  
+} 
 .wrapper {
-  max-width: 1200px;
-  max-width: calc(100% - 40px);
-  margin: 0 auto;
+  max-width: 100%;
+  margin: 20px;
   background: #fff;
   display: flex;
   box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.15);
 }
+
 .sidebar {
   background-color: #1e2939;
   width: 370px;
   padding-top: 40px;
-  padding-bottom: 40px;
+  padding-bottom: 0px;
   flex: none;
 }
 .my-photo {
@@ -40,14 +54,12 @@ body {
   margin-left: 10px;
   font-size: 14px;
   font-weight: 400;
-  line-height: 24px;
   color: #7a808a;
 }
 .contacts-link-type {
   color: #fff;
   font-size: 14px;
   font-weight: 700;
-  line-height: 24px;
 }
 .tech-skills-container {
   margin-top: 55px;
@@ -88,6 +100,12 @@ body {
   padding-left: 90px;
   padding-right: 90px;
 }
+@media (max-width: 768px)
+{
+  .about-me {
+    max-width: 370px;
+  }
+}
 h2 {
   margin-top: 108px;
   font-size: 14px;
@@ -98,7 +116,7 @@ h1 {
   font-size: 45px;
   font-weight: 700;
 }
-.paragraph {
+.paragraph{
   margin-top: 24px;
   color: #595959;
   font-size: 14px;
