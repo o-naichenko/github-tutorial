@@ -2,8 +2,8 @@
   padding: 0;
   margin: 0 auto;
   box-sizing: border-box;
+  position: relative;
 }
-
 body {
   background: #f5f7fa;
   font-family: "Montserrat", sans-serif;
@@ -11,6 +11,7 @@ body {
 }
 .wrapper {
   max-width: 1200px;
+  max-width: calc(100% - 40px);
   margin: 0 auto;
   background: #fff;
   display: flex;
@@ -21,6 +22,7 @@ body {
   width: 370px;
   padding-top: 40px;
   padding-bottom: 40px;
+  flex: none;
 }
 .my-photo {
   width: 370px;
@@ -80,7 +82,6 @@ body {
   margin: 40px;
   width: 200px;
 }
-
 .about-me {
   padding-top: 110px;
   padding-bottom: 110px;
