@@ -41,6 +41,7 @@ body {
   font-size: 14px;
   font-weight: 400;
   color: #7a808a;
+  text-decoration: none;
 }
 .contacts-link-type {
   color: #fff;
@@ -49,6 +50,7 @@ body {
 }
 .fb-logo {
 margin-left: -3.5px;
+margin-top: 3.5px;
 }
 .tech-skills-container {
   margin-top: 55px;
