@@ -9,34 +9,20 @@ body {
   font-family: "Montserrat", sans-serif;
   padding: 5%;
 }
-@media (max-width: 768px) 
-{
-  .wrapper {
-    flex-direction: column;
-    margin: 20px;
-  }
-  .sidebar {
-    width: 100%;
-    margin-top: 20px;
-  }
-  .my-photo {
-    width: 100%;
-  }  
-} 
 .wrapper {
   max-width: 100%;
-  margin: 20px;
   background: #fff;
   display: flex;
-  box-shadow: 5px 9px 20px rgba(0, 0, 0, 0.15);
+  padding-top: 20px; 
+  padding-left: 20px;
+  padding-right: 20px;
+  box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.15);
 }
-
 .sidebar {
   background-color: #1e2939;
   width: 370px;
-  padding-top: 40px;
-  padding-bottom: 0px;
   flex: none;
+  margin: 0px;
 }
 .my-photo {
   width: 370px;
@@ -46,9 +32,9 @@ body {
   flex-direction: column;
 }*/
 .contacts-container {
-  margin-top: 60px;
-  margin-left: 40px;
-  margin-right: 40px;
+  margin-top: 10%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 .contacts-link {
   margin-left: 10px;
@@ -61,15 +47,19 @@ body {
   font-size: 14px;
   font-weight: 700;
 }
+.fb-logo {
+margin-left: -3.5px;
+}
 .tech-skills-container {
   margin-top: 55px;
-  margin-left: 40px;
-  margin-right: 40px;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 .soft-skills-container {
   margin-top: 10px;
   padding-top: 10px;
-  padding-left: 40px;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 /* hello mentor :) */
 .aside-h3 {
@@ -77,7 +67,6 @@ body {
   font-family: Montserrat;
   font-size: 22px;
   font-weight: 700;
-  line-height: 24px;
   margin-bottom: 20px;
 }
 .aside-li {
@@ -88,26 +77,19 @@ body {
   color: #fff;
   font-size: 14px;
   font-weight: 400;
-  line-height: 24px;
 }
 .certificate-goit {
-  margin: 40px;
-  width: 200px;
+  margin: 10%;
+  width: 50%;
 }
 .about-me {
-  padding-top: 110px;
-  padding-bottom: 110px;
-  padding-left: 90px;
-  padding-right: 90px;
-}
-@media (max-width: 768px)
-{
-  .about-me {
-    max-width: 370px;
-  }
+  padding-top: 15%;
+  padding-bottom: 15%;
+  padding-left: 10%;
+  margin: 0;
 }
 h2 {
-  margin-top: 108px;
+  margin-top: 10%px;
   font-size: 14px;
   font-weight: 700;
 }
@@ -121,7 +103,6 @@ h1 {
   color: #595959;
   font-size: 14px;
   font-weight: 400;
-  line-height: 24px;
 }
 .about-me-main {
   margin-bottom: 64px;
@@ -206,4 +187,41 @@ ol {
   font-weight: 700;
   margin-bottom: 15px;
 }
+footer {
+  text-align: center;
+}
 /* THANK U SO MUCH :) */
+@media screen and (max-width: 950px) 
+{
+  .about-me {
+    max-width: 100%;
+    padding-left: 10%;
+    padding-right: 0;
+    align-content: center;
+  }
+}
+@media screen and (max-width: 790px)
+  {
+  body {
+    width: 100%;
+  }
+  .wrapper {
+    padding: 5%;
+    min-width: 370px;
+    margin: 0;
+    flex-direction: column;
+  }
+  .my-photo {
+    width: 370px;
+  }  
+  .about-me {
+    max-width: 370px;
+    padding-left: 10%;
+    padding-right: 5%;
+  }
+  h2 {
+    margin-top: 0px;
+    font-size: 14px;
+    font-weight: 700;
+  }
+}
